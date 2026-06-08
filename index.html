@@ -28,8 +28,8 @@
       <ul class="nav-links">
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#labs">Labs</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#labs">Labs</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -41,13 +41,13 @@
       <div class="hero-tag">Nanotechnology Engineering · University of Waterloo</div>
       <h1 class="hero-title">Khizr<br><em>Siddique</em></h1>
       <p class="hero-desc">
-        Building at the intersection of hardware and software —
-        from semiconductor physics and embedded systems to
+        Building at the intersection of hardware and software,
+        from semiconductors and embedded systems to
         production-grade full-stack infrastructure and ML tooling.
       </p>
       <div class="hero-cta">
-        <a class="btn-primary" href="#projects">View Projects</a>
-        <a class="btn-ghost"   href="#contact">Get in Touch</a>
+        <a class="btn-primary" href="#" onclick="event.preventDefault();document.querySelector('#projects').scrollIntoView({behavior:'smooth'})">View Projects</a>
+        <a class="btn-ghost" href="#" onclick="event.preventDefault();document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Get in Touch</a>
       </div>
       <div class="hero-scroll">Scroll</div>
     </div>
@@ -76,7 +76,7 @@
             </div>
           </div>
           <div class="about-photo-wrap">
-              <img src="assets/aboutme/me.JPG" class="about-photo" alt="Khizr Siddique">
+              <img src="assets/aboutme/me.png" class="about-photo" alt="Khizr Siddique">
           </div>
         </div>
       </div>
@@ -93,22 +93,22 @@
 
           <div class="exp-row reveal">
             <div>
-              <div class="exp-period">Jan – Apr 2025</div>
+              <div class="exp-period">Jan – Apr 2026</div>
               <div class="exp-co">Loblaw Companies</div>
             </div>
             <div>
               <div class="exp-role">Software Engineering Intern</div>
-              <p class="exp-desc">Built production Flask/Python infrastructure for the Replenishment Optimization team. Migrated legacy PHP tools to blueprint architecture, implemented ThreadPoolExecutor multithreading (30 s → 8 s), resolved a 3 GB memory crash via chunked Pandas.</p>
+              <p class="exp-desc">Built production Flask/Python infrastructure for the Replenishment Optimization team. Migrated legacy PHP tools to blueprint architecture, implemented multithreading (30 s → 8 s), resolved a memory crash via chunked Pandas.</p>
               <div class="tags">
                 <span class="tag">Python</span><span class="tag">Flask</span>
-                <span class="tag">Teradata SQL</span><span class="tag">Multithreading</span><span class="tag">Pandas</span>
+                <span class="tag">Teradata SQL</span><span class="tag">Multithreading</span><span class="tag">Oracle</span>
               </div>
             </div>
           </div>
 
           <div class="exp-row reveal">
             <div>
-              <div class="exp-period">May – Aug 2024</div>
+              <div class="exp-period">Sept – Dec 2025</div>
               <div class="exp-co">CIBC</div>
             </div>
             <div>
@@ -122,7 +122,7 @@
 
           <div class="exp-row reveal">
             <div>
-              <div class="exp-period">Sep – Dec 2023</div>
+              <div class="exp-period">Jan – April 2025</div>
               <div class="exp-co">Bora Pharmaceuticals</div>
             </div>
             <div>
@@ -136,7 +136,7 @@
 
           <div class="exp-row reveal">
             <div>
-              <div class="exp-period">Earlier</div>
+              <div class="exp-period">May – Aug 2024</div>
               <div class="exp-co">Smurfit WestRock</div>
             </div>
             <div>
@@ -251,6 +251,17 @@
 
         </div>
       </div>
+    </section>    
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="wrap section">
+        <div class="section-label">03 — Projects</div>
+        <h2 class="section-title">Things I've<br><em>built.</em></h2>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
     </section>
 
     <div class="divider"></div>
@@ -258,7 +269,7 @@
     <!-- LABS -->
     <section id="labs">
       <div class="wrap section">
-        <div class="section-label">05 — Labs</div>
+        <div class="section-label">04 — Labs</div>
         <h2 class="section-title">Academic<br><em>lab work.</em></h2>
 
         <div class="labs-grid">
@@ -304,16 +315,6 @@
           </div>
 
           <div class="lab-card reveal">
-            <div class="lab-num">NE 217 / 01</div>
-            <div class="lab-title">1D Heat Equation — FTCS Solver</div>
-            <div class="lab-course">Numerical Methods & Advanced Calculus</div>
-            <p class="lab-desc">Implemented a Forward-Time Centered-Space (FTCS) finite difference scheme in MATLAB to solve the 1D diffusion equation. Analysed stability via the Courant number and validated against analytical solutions.</p>
-            <div class="lab-tags">
-              <span class="tag">MATLAB</span><span class="tag">FTCS</span><span class="tag">PDE</span><span class="tag">Stability Analysis</span>
-            </div>
-          </div>
-
-          <div class="lab-card reveal">
             <div class="lab-num">NE 226 / 01</div>
             <div class="lab-title">Wave Optics — Interference & Polarisation</div>
             <div class="lab-course">Electromagnetic Fields & Waves</div>
@@ -323,27 +324,76 @@
             </div>
           </div>
 
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 226L / 01</div>
+            <div class="lab-title">UV-Visible Spectroscopy & CdSe Nanoparticle Sizing</div>
+            <div class="lab-course">Material Characterization Methods</div>
+          <p class="lab-desc">Built a Beer-Lambert calibration curve for methylene blue (R²=0.9922, ε=74.727 mM⁻¹cm⁻¹). Extracted optical band gaps from CdSe nanoparticle absorption spectra and calculated particle diameters (1.6–2.4 nm) using a 5th-degree polynomial fit.</p>
+          <div class="lab-tags">
+            <span class="tag">UV-Vis</span><span class="tag">Beer-Lambert</span><span class="tag">CdSe</span><span class="tag">Band Gap</span>
+          </div>
+          </div>
+
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 226L / 02</div>
+            <div class="lab-title">FTIR Spectroscopy</div>
+            <div class="lab-course">Material Characterization Methods</div>
+            <p class="lab-desc">Identified an unknown compound as ibuprofen via IR peak analysis — O-H stretch at 3287 cm⁻¹, C=O at 1613 cm⁻¹, aromatic C=C at 1600 cm⁻¹. Compared Nujol vs KBr sample prep and analysed SNR scaling with scan count (SNR ∝ √n).</p>
+            <div class="lab-tags">
+              <span class="tag">FTIR</span><span class="tag">ATR</span><span class="tag">Ibuprofen ID</span><span class="tag">SNR Analysis</span>
+            </div>
+          </div>
+
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 226L / 03</div>
+            <div class="lab-title">Raman Spectroscopy — InO₃ & SWNT Characterisation</div>
+            <div class="lab-course">Material Characterization Methods</div>
+            <p class="lab-desc">Measured SNR at 5 s and 25 s integration times for InO₃ nanoparticles (SNR: 0.269 → 1.464), confirming SNR ∝ √t. Calculated SWNT radii from RBM peaks (0.38–0.73 nm). Optimised laser power, objective, and integration time for nanoparticle Raman analysis.</p>
+            <div class="lab-tags">
+              <span class="tag">Raman</span><span class="tag">SWNT</span><span class="tag">InO₃</span><span class="tag">RBM</span>
+            </div>
+          </div>
+
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 226L / 04</div>
+            <div class="lab-title">Ellipsometry — Polystyrene Thin Film Thickness</div>
+            <div class="lab-course">Material Characterization Methods</div>
+            <p class="lab-desc">Measured optical constants and thickness of SiN and polystyrene films spin-coated at 500–1000 RPM with 1–3 wt% concentration. Confirmed thickness scales with concentration and inversely with spin speed (range: 1019–3656 Å). Modelled bilayer PS/SiNx stacks.</p>
+            <div class="lab-tags">
+              <span class="tag">Ellipsometry</span><span class="tag">Thin Films</span><span class="tag">Spin Coating</span><span class="tag">Polystyrene</span>
+            </div>
+          </div>
+
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 226L / 05</div>
+            <div class="lab-title">Scanning Electron Microscopy — Resolution & Imaging Modes</div>
+            <div class="lab-course">Material Characterization Methods</div>
+            <p class="lab-desc">Optimised SEM imaging on a Hitachi S-3500N across low, medium, and high magnifications. Compared secondary electron vs backscattered electron imaging modes. Identified thermionic gun brightness as the primary resolution bottleneck and mitigated charging via conductive coating.</p>
+            <div class="lab-tags">
+              <span class="tag">SEM</span><span class="tag">SE / BSE Imaging</span><span class="tag">Hitachi S-3500N</span><span class="tag">Resolution</span>
+            </div>
+          </div>
+
+            <div class="lab-card reveal">
+            <div class="lab-num">NE 226L / 06</div>
+            <div class="lab-title">X-Ray Diffraction — TiO₂ Phase Transition & Scherrer Analysis</div>
+            <div class="lab-course">Material Characterization Methods</div>
+            <p class="lab-desc">Identified anatase TiO₂ pre-bake and confirmed anatase-to-rutile phase transition post-bake via peak shifts at 2θ=27.34°. Calculated crystallite sizes using the Scherrer equation: Si (95.9 nm), anatase (80.1 nm), rutile nanopowder (22.0 nm). Discussed instrumental broadening correction across XRD systems.</p>
+            <div class="lab-tags">
+              <span class="tag">XRD</span><span class="tag">TiO₂</span><span class="tag">Scherrer Equation</span><span class="tag">Phase Transition</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <div class="divider"></div>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="wrap section">
-        <div class="section-label">03 — Projects</div>
-        <h2 class="section-title">Things I've<br><em>built.</em></h2>
-        <div class="projects-grid" id="projectsGrid"></div>
-      </div>
-    </section>
-
-    <div class="divider"></div>
+  <div class="divider"></div>
 
     <!-- CONTACT -->
     <section id="contact">
       <div class="wrap section">
-        <div class="section-label">04 — Contact</div>
+        <div class="section-label">05 — Contact</div>
         <div class="contact-inner">
           <div>
             <h2 class="section-title">Open to<br><em>opportunities.</em></h2>

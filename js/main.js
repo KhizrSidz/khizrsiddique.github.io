@@ -11,21 +11,14 @@ const PROJECTS = [
     video: null
   },
   {
-    id: 2, title: "Quarry", year: "2025", type: "Open Source",
-    desc: "AI-powered SQL PR review tool. Two-pass sqlfluff + LLM engine with GitHub App integration — born from a real gap in the Loblaw replenishment workflow. Automates SQL quality enforcement in CI/CD pipelines.",
-    stack: ["Python", "Flask", "GitHub Apps", "LLM", "sqlfluff"],
-    github: "https://github.com/KhizrSidz/quarry",
-    live: "", images: [], video: null
-  },
-  {
-    id: 3, title: "MOSFET Device Simulator", year: "2025", type: "Hardware / Simulation",
+    id: 2, title: "MOSFET Device Simulator", year: "2025", type: "Hardware / Simulation",
     desc: "First-principles MOSFET simulator built from MOS capacitor electrostatics and long-channel transistor theory. Computes threshold voltage analytically and derives ID–VGS and ID–VDS characteristics across doping, oxide thickness, geometry, and temperature. CLI-driven parametric sweeps with full plot output.",
     stack: ["Python", "NumPy", "Matplotlib", "Semiconductor Physics", "MOSFETs"],
     github: "https://github.com/KhizrSidz/mosfet-simulation",
     live: "", images: ["assets/mosfet/mosfet1.jpeg", "assets/mosfet/mosfet2.jpeg", "assets/mosfet/mosfet3.jpeg"], video: null
   },
   {
-    id: 4, title: "MasjidOS", year: "2024", type: "Full-Stack",
+    id: 3, title: "MasjidOS", year: "2024", type: "Full-Stack",
     desc: "A single platform where mosque administrators can run their community, and where any member of the public can find their local masjid. Multi-mosque SaaS platform with multi-tenancy, Aladhan prayer times API, and a full admin portal. Built after analysing 47+ competitors in the mosque management space.",
     stack: ["React", "Vite", "Supabase", "PostgreSQL"],
     github: "https://github.com/KhizrSidz/masjidOS",
@@ -34,7 +27,7 @@ const PROJECTS = [
       video: null
   },
   {
-    id: 5, title: "OpenCL Matrix Benchmark", year: "2026", type: "Hardware",
+    id: 4, title: "OpenCL Matrix Benchmark", year: "2026", type: "Hardware",
     desc: "OpenCL matrix multiplication benchmark achieving ~4.5x speedup on 512x512 matrices. Demonstrates GPU parallelism fundamentals with detailed CPU vs GPU performance profiling.",
     stack: ["OpenCL", "C++", "GPU Computing"],
     github: "https://github.com/KhizrSidz/GPU-CPU-Matrix-Multiplication",
@@ -42,7 +35,7 @@ const PROJECTS = [
     images: ["assets/opencl/matrix1.png", "assets/opencl/matrix2.png", "assets/opencl/matrix3.png", "assets/opencl/matrix4.png"], video: null
   },
   {
-    id: 6, title: "Quadcopter w/ Phone Holder", year: "2025", type: "CAD / Design",
+    id: 5, title: "Quadcopter w/ Phone Holder", year: "2025", type: "CAD / Design",
     desc: "Quadcopter frame designed in SolidWorks with a custom-integrated phone holder mount. Fully modelled, 3D printed, and assembled. The phone holder was designed as a snap-fit component integrated directly into the frame geometry.",
     stack: ["SolidWorks", "3D Printing", "CAD", "Mechanical Design"],
     github: "", live: "",
@@ -50,7 +43,7 @@ const PROJECTS = [
     video: "assets/quadcopter/drone.mp4"
   },
   {
-    id: 7, title: "18650 Battery Pack", year: "2026", type: "CAD / Design",
+    id: 6, title: "18650 Battery Pack", year: "2026", type: "CAD / Design",
     desc: "Custom 18650 lithium cell battery pack designed in SolidWorks. Modelled cell holders, bus bar geometry, and enclosure with thermal clearance. Designed with BMS integration in mind.",
     stack: ["SolidWorks", "CAD", "Battery Design", "BMS"],
     github: "", live: "", 
@@ -58,12 +51,19 @@ const PROJECTS = [
     video: "assets/battery/Battery1.mp4"
   },
   {
-    id: 8, title: "4-Cylinder Piston Engine", year: "2024", type: "CAD / Design",
+    id: 7, title: "4-Cylinder Piston Engine", year: "2024", type: "CAD / Design",
     desc: "Piston Engine designed and simulatedin SolidWorks Fully modelled, 3D printed, and assembled.",
     stack: ["SolidWorks", "3D Printing", "CAD", "Mechanical Design"],
     github: "", live: "",
     images: [],
     video: "assets/piston/piston.mp4"
+  },
+  {
+    id: 8, title: "Quarry", year: "2025", type: "Open Source",
+    desc: "AI-powered SQL PR review tool. Two-pass sqlfluff + LLM engine with GitHub App integration — born from a real gap in the Loblaw replenishment workflow. Automates SQL quality enforcement in CI/CD pipelines.",
+    stack: ["Python", "Flask", "GitHub Apps", "LLM", "sqlfluff"],
+    github: "https://github.com/KhizrSidz/quarry",
+    live: "", images: [], video: null
   },
   {
     id: 9, title: "COMING SOON!", year: "", type: "",
@@ -220,7 +220,11 @@ function enterSite() {
   const intro = document.getElementById("intro");
   const app   = document.getElementById("app");
   intro.classList.add("hide");
-  setTimeout(() => { intro.style.display = "none"; app.classList.add("visible"); }, 1100);
+  setTimeout(() => {
+    intro.style.display = "none";
+    intro.style.pointerEvents = "none";
+    app.classList.add("visible");
+  }, 1100);
 }
 setTimeout(enterSite, 3700);
 

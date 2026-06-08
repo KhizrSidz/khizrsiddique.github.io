@@ -2,6 +2,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 img, video { max-width: 100%; display: block; }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#projects, #contact, #experience, #skills, #labs, #about {
+  scroll-margin-top: 80px;
+}
+
 /* ── TOKENS ───────────────────────────────────────────────────────── */
 :root {
   --bg:     #080809;
@@ -204,7 +212,7 @@ nav {
   justify-content: flex-end;
   padding: 0 56px 96px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-grid {
@@ -263,7 +271,7 @@ nav {
   margin-top: 36px;
 }
 
-.hero-cta { margin-top: 48px; display: flex; gap: 14px; }
+.hero-cta { margin-top: 48px; display: flex; gap: 14px; position: relative; z-index: 10; }
 
 .hero-scroll {
   position: absolute;
@@ -413,32 +421,18 @@ nav {
 }
 
 .about-photo-wrap {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-photo-wrap::before {
-  content: '';
-  position: absolute;
-  inset: -12px;
-  border: 1px solid var(--bord);
-  pointer-events: none;
-}
-
-.about-photo-wrap::after {
-  content: '';
-  position: absolute;
-  bottom: -20px; right: -20px;
-  width: 120px; height: 120px;
-  border-right: 2px solid var(--accent);
-  border-bottom: 2px solid var(--accent);
-  pointer-events: none;
-}
 
 .about-photo {
-  width: 100%;
-  aspect-ratio: 3/4;
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   display: block;
+  border-radius: 50%;
   filter: grayscale(15%);
 }
 
@@ -1051,3 +1045,8 @@ footer {
 }
 
 .lab-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+
+#intro.hide {
+  animation: introOut 0.9s cubic-bezier(0.76,0,0.24,1) 0.2s forwards;
+  pointer-events: none;
+}
