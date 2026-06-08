@@ -7,7 +7,7 @@ const PROJECTS = [
     stack: ["React", "JavaScript", "IBM Qiskit", "Quantum Computing"],
     github: "https://github.com/KhizrSidz/quantcalc",
     live: "",
-    images: ["assets/quantcalc/quantcalc1.png", "assets/quantcalc/quantcalc2.png", "assets/quantcalc/quantcalc3.png"],
+    images: ["assets/quantcalc/QuantCalc1.png", "assets/quantcalc/QuantCalc2.png", "assets/quantcalc/QuantCalc3.png"],
     video: null
   },
   {
