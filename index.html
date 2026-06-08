@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khizr Siddique — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- INTRO -->
+  <div id="intro">
+    <p class="intro-hey">Hey, welcome to my website</p>
+    <h1 class="intro-name">Khizr<br><span>Siddique</span></h1>
+    <p class="intro-sub">Nanotechnology Engineering · UWaterloo</p>
+    <div class="intro-bar"></div>
+    <button class="intro-enter" onclick="enterSite()">Enter →</button>
+  </div>
+
+  <!-- APP -->
+  <div id="app">
+
+    <nav>
+      <a class="nav-logo" href="#hero">KS</a>
+      <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#labs">Labs</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div id="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-tag">Nanotechnology Engineering · University of Waterloo</div>
+      <h1 class="hero-title">Khizr<br><em>Siddique</em></h1>
+      <p class="hero-desc">
+        Building at the intersection of hardware and software —
+        from semiconductor physics and embedded systems to
+        production-grade full-stack infrastructure and ML tooling.
+      </p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="#projects">View Projects</a>
+        <a class="btn-ghost"   href="#contact">Get in Touch</a>
+      </div>
+      <div class="hero-scroll">Scroll</div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap section">
+        <div class="section-label">01 — About</div>
+        <div class="about-grid">
+          <div>
+            <h2 class="section-title">Engineering with<br><em>depth.</em></h2>
+            <p class="about-bio" style="margin-top:24px">
+              I'm a <strong>Nanotechnology Engineering student at the University of Waterloo</strong>,
+              currently in 2B. My work spans two tracks: <strong>hardware</strong> - materials
+              characterisation, semiconductor devices, embedded systems, BMS design - and
+              <strong>software</strong> - production Flask/Python infrastructure, SQL at scale,
+              React, node.js and LLM tooling.<br><br>
+              Four co-op terms at <strong>Loblaw, CIBC, Bora Pharmaceuticals, and Smurfit
+              WestRock</strong> have grounded my engineering in real production environments.
+            </p>
+            <div class="about-stats">
+              <div class="stat-cell"><div class="stat-num">4</div><div class="stat-lbl">Co-op Terms</div></div>
+              <div class="stat-cell"><div class="stat-num">3A</div><div class="stat-lbl">Year at UW</div></div>
+              <div class="stat-cell"><div class="stat-num">6+</div><div class="stat-lbl">Shipped Projects</div></div>
+              <div class="stat-cell"><div class="stat-num">∞</div><div class="stat-lbl">Build Velocity</div></div>
+            </div>
+          </div>
+          <div class="about-photo-wrap">
+              <img src="assets/aboutme/me.JPG" class="about-photo" alt="Khizr Siddique">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="wrap section">
+        <div class="section-label">02 — Experience</div>
+        <h2 class="section-title">Where I've<br><em>worked.</em></h2>
+        <div class="exp-list">
+
+          <div class="exp-row reveal">
+            <div>
+              <div class="exp-period">Jan – Apr 2025</div>
+              <div class="exp-co">Loblaw Companies</div>
+            </div>
+            <div>
+              <div class="exp-role">Software Engineering Intern</div>
+              <p class="exp-desc">Built production Flask/Python infrastructure for the Replenishment Optimization team. Migrated legacy PHP tools to blueprint architecture, implemented ThreadPoolExecutor multithreading (30 s → 8 s), resolved a 3 GB memory crash via chunked Pandas.</p>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">Flask</span>
+                <span class="tag">Teradata SQL</span><span class="tag">Multithreading</span><span class="tag">Pandas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-row reveal">
+            <div>
+              <div class="exp-period">May – Aug 2024</div>
+              <div class="exp-co">CIBC</div>
+            </div>
+            <div>
+              <div class="exp-role">Software Engineering Intern — PMO</div>
+              <p class="exp-desc">Built and maintained Power BI dashboards and data pipelines for portfolio management. Drove reporting automation across program delivery teams.</p>
+              <div class="tags">
+                <span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Data Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-row reveal">
+            <div>
+              <div class="exp-period">Sep – Dec 2023</div>
+              <div class="exp-co">Bora Pharmaceuticals</div>
+            </div>
+            <div>
+              <div class="exp-role">Project Management / Operations</div>
+              <p class="exp-desc">Supported project delivery and operations coordination across pharmaceutical manufacturing workflows.</p>
+              <div class="tags">
+                <span class="tag">Project Management</span><span class="tag">Operations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-row reveal">
+            <div>
+              <div class="exp-period">Earlier</div>
+              <div class="exp-co">Smurfit WestRock</div>
+            </div>
+            <div>
+              <div class="exp-role">Process Engineering Intern</div>
+              <p class="exp-desc">Manufacturing process engineering and quality analysis in a large-scale packaging environment.</p>
+              <div class="tags">
+                <span class="tag">Process Engineering</span><span class="tag">Manufacturing</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="wrap section">
+        <div class="section-label">04 — Skills</div>
+        <h2 class="section-title">What I<br><em>know.</em></h2>
+
+        <div class="skills-marquee-wrap">
+
+          <!-- Row 1 — Software -->
+          <div class="skills-track row1">
+            <span class="skill-pill accent"><span class="skill-dot"></span>Python</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>JavaScript</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>TypeScript</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>React</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>Flask</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>Node.js</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>SQL</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>REST APIs</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>Git</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>Vite</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>Supabase</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>SQLite</span>
+            <!-- duplicate for seamless loop -->
+            <span class="skill-pill accent"><span class="skill-dot"></span>Python</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>JavaScript</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>React</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>Flask</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>Node.js</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>SQL</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>REST APIs</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>Git</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>Vite</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>Supabase</span>
+            <span class="skill-pill accent"><span class="skill-dot"></span>SQLite</span>
+          </div>
+
+          <!-- Row 2 — Hardware / Nano -->
+          <div class="skills-track row2">
+            <span class="skill-pill cyan"><span class="skill-dot"></span>SolidWorks</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>OpenCL</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>CUDA</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>STM32</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>Semiconductor Physics</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>Band Theory</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>BMS Design</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>PN Junctions</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>MOSFETs</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>XRD / SEM</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>Spectroscopy</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>MATLAB</span>
+            <!-- duplicate -->
+            <span class="skill-pill cyan"><span class="skill-dot"></span>SolidWorks</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>OpenCL</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>CUDA</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>STM32</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>Semiconductor Physics</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>Band Theory</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>BMS Design</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>PN Junctions</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>MOSFETs</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>XRD / SEM</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>Spectroscopy</span>
+            <span class="skill-pill cyan"><span class="skill-dot"></span>MATLAB</span>
+          </div>
+
+          <!-- Row 3 — Tools / Data / Other -->
+          <div class="skills-track row3">
+            <span class="skill-pill orange"><span class="skill-dot"></span>Power BI</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>Pandas</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>Teradata</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>MS Office</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>GitHub Apps</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>JWT / HMAC</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>Claude API</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>LLM Tooling</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>Multithreading</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>ETL Pipelines</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>3D Printing</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>Fusion 360</span>
+            <!-- duplicate -->
+            <span class="skill-pill orange"><span class="skill-dot"></span>Power BI</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>Pandas</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>Teradata</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>MS Office</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>GitHub Apps</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>JWT / HMAC</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>Claude API</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>LLM Tooling</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>Multithreading</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>ETL Pipelines</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>3D Printing</span>
+            <span class="skill-pill orange"><span class="skill-dot"></span>Fusion 360</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- LABS -->
+    <section id="labs">
+      <div class="wrap section">
+        <div class="section-label">05 — Labs</div>
+        <h2 class="section-title">Academic<br><em>lab work.</em></h2>
+
+        <div class="labs-grid">
+
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 242 / 01</div>
+            <div class="lab-title">MOSFET Characterisation & Body Effect</div>
+            <div class="lab-course">Semiconductor Physics & Devices</div>
+            <p class="lab-desc">Measured threshold voltage shift under body bias. Extracted transconductance and output resistance from I–V curves. Identified subthreshold slope and channel-length modulation.</p>
+            <div class="lab-tags">
+              <span class="tag">MOSFET</span><span class="tag">I–V Curves</span><span class="tag">Body Effect</span><span class="tag">Threshold Voltage</span>
+            </div>
+          </div>
+
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 242 / 02</div>
+            <div class="lab-title">PN Junction & Zener / Avalanche Breakdown</div>
+            <div class="lab-course">Semiconductor Physics & Devices</div>
+            <p class="lab-desc">Characterised forward and reverse I–V curves of silicon diodes. Identified Zener and avalanche breakdown regimes and extracted ideality factor and reverse saturation current.</p>
+            <div class="lab-tags">
+              <span class="tag">PN Junction</span><span class="tag">Zener</span><span class="tag">Avalanche</span><span class="tag">Diode I–V</span>
+            </div>
+          </div>
+
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 242 / 03</div>
+            <div class="lab-title">Optical Band Gap & LED Emission Spectra</div>
+            <div class="lab-course">Semiconductor Physics & Devices</div>
+            <p class="lab-desc">Measured optical transmission spectra to extract band gap energies. Characterised LED L–I curves and emission spectra using an Ocean Optics FLAME-S spectrometer.</p>
+            <div class="lab-tags">
+              <span class="tag">Band Gap</span><span class="tag">Spectroscopy</span><span class="tag">LED</span><span class="tag">FLAME-S</span>
+            </div>
+          </div>
+
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 242 / 04</div>
+            <div class="lab-title">Four-Point Probe & Sheet Resistance</div>
+            <div class="lab-course">Semiconductor Physics & Devices</div>
+            <p class="lab-desc">Used hot probe and four-point probe techniques to determine semiconductor type and measure resistivity. Calculated sheet resistance and compared doping concentrations across samples.</p>
+            <div class="lab-tags">
+              <span class="tag">Four-Point Probe</span><span class="tag">Hot Probe</span><span class="tag">Resistivity</span><span class="tag">Sheet Resistance</span>
+            </div>
+          </div>
+
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 217 / 01</div>
+            <div class="lab-title">1D Heat Equation — FTCS Solver</div>
+            <div class="lab-course">Numerical Methods & Advanced Calculus</div>
+            <p class="lab-desc">Implemented a Forward-Time Centered-Space (FTCS) finite difference scheme in MATLAB to solve the 1D diffusion equation. Analysed stability via the Courant number and validated against analytical solutions.</p>
+            <div class="lab-tags">
+              <span class="tag">MATLAB</span><span class="tag">FTCS</span><span class="tag">PDE</span><span class="tag">Stability Analysis</span>
+            </div>
+          </div>
+
+          <div class="lab-card reveal">
+            <div class="lab-num">NE 226 / 01</div>
+            <div class="lab-title">Wave Optics — Interference & Polarisation</div>
+            <div class="lab-course">Electromagnetic Fields & Waves</div>
+            <p class="lab-desc">Analysed plane wave propagation, thin-film interference, and atomic polarisation. Calculated intensity patterns for double-slit and thin-film configurations with phase analysis.</p>
+            <div class="lab-tags">
+              <span class="tag">Wave Optics</span><span class="tag">Interference</span><span class="tag">Polarisation</span><span class="tag">Plane Waves</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="wrap section">
+        <div class="section-label">03 — Projects</div>
+        <h2 class="section-title">Things I've<br><em>built.</em></h2>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap section">
+        <div class="section-label">04 — Contact</div>
+        <div class="contact-inner">
+          <div>
+            <h2 class="section-title">Open to<br><em>opportunities.</em></h2>
+            <p class="contact-quote">Actively seeking Fall 2026 co-op/internship positions across SWE, embedded, ML, and hardware tracks.</p>
+          </div>
+          <div class="c-links">
+            <a href="mailto:mksiddiq@uwaterloo.ca" class="c-link">
+              <div class="c-meta"><span class="c-lbl">Email</span><span class="c-val">mksiddiq@uwaterloo.ca</span></div>
+              <span class="c-arrow">↗</span>
+            </a>
+            <a href="https://linkedin.com/in/khizr-siddique" target="_blank" rel="noopener" class="c-link">
+              <div class="c-meta"><span class="c-lbl">LinkedIn</span><span class="c-val">linkedin.com/in/khizr-siddique</span></div>
+              <span class="c-arrow">↗</span>
+            </a>
+            <a href="https://github.com/KhizrSidz" target="_blank" rel="noopener" class="c-link">
+              <div class="c-meta"><span class="c-lbl">GitHub</span><span class="c-val">github.com/KhizrSidz</span></div>
+              <span class="c-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="foot-copy">© 2026 Khizr Siddique — Waterloo, ON</span>
+      <span class="foot-built">Built with intent.</span>
+    </footer>
+
+  </div>
+
+  <!-- PROJECT MODAL -->
+  <div id="modalBg" onclick="if(event.target===this)closeModal()">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <div id="mMedia"></div>
+      <div class="modal-body">
+        <div class="modal-header">
+          <div id="mTitle"></div>
+          <div id="mType"></div>
+        </div>
+        <p id="mDesc"></p>
+        <div id="mStack"></div>
+        <div id="mLinks"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
